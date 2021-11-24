@@ -1,7 +1,8 @@
 **Iterator** 
 - Là một mẫu thiết kế hành vi cho phép duyệt tuần tự thông qua một cấu trúc dữ liệu phức tạp mà không để lộ các chi tiết bên trong của nó. Ý tưởng chính của mẫu Iterator là trích xuất hành vi truyền tải của một tập hợp thành một đối tượng riêng biệt được gọi là trình vòng lặp.
 - Ví dụ như trình vòng lặp hồ sơ mạng xã hội,  mẫu Iterator được sử dụng để duyệt qua các hồ sơ có trong một bộ sưu tập mạng xã hội từ xa mà không để lộ bất kỳ chi tiết giao tiếp nào với phía client.
-- VD trong project (https://github.com/abishekaditya/DesignPatterns/blob/master/IteratorPattern/Client.cs)
+- VD trong project (https://github.com/abishekaditya/DesignPatterns/blob/master/IteratorPattern/Client.cs).
+
  public class Client
     {
         private IEnumerable _breakfast;
@@ -37,7 +38,8 @@
   ** Mediator**
   -làm giảm sự ghép nối giữa các thành phần của chương trình bằng cách làm cho chúng giao tiếp gián tiếp, thông qua một đối tượng trung gian đặc biệt.
   - ví dụ rất nhiều phần tử GUI hợp tác với sự trợ giúp của người trung gian nhưng không phụ thuộc vào nhau.
-  - VD trong project (https://github.com/abishekaditya/DesignPatterns/blob/master/MediatorPattern/Customer.cs)
+  - VD trong project (https://github.com/abishekaditya/DesignPatterns/blob/master/MediatorPattern/Customer.cs).
+  
    class Customer : Colleague
     {
         public Customer(Mediator mediator) : base(mediator) { }
@@ -63,7 +65,8 @@
     **State**
     - là một mẫu thiết kế hành vi cho phép một đối tượng thay đổi hành vi khi trạng thái bên trong của nó thay đổi.
     - State pattern gợi ý nên tạo các lớp mới cho tất cả các trạng thái có thể có của một đối tượng và trích xuất tất cả các hành vi dành riêng cho trạng thái vào các lớp này.
-    - VD trong project(https://github.com/abishekaditya/DesignPatterns/blob/master/StatePattern/GumballMachine.cs)
+    - VD trong project(https://github.com/abishekaditya/DesignPatterns/blob/master/StatePattern/GumballMachine.cs).
+    
      public void InsertQuarter()
         {
             State.InsertQuarter();
@@ -93,6 +96,7 @@
     - là một mẫu thiết kế biến một tập hợp các hành vi thành các đối tượng và làm cho chúng có thể hoán đổi cho nhau bên trong đối tượng ngữ cảnh ban đầu.
     - Strategy pattern gợi ý rằng nên chọn một lớp thực hiện điều gì đó cụ thể theo nhiều cách khác nhau và trích xuất tất cả các thuật toán này thành các lớp riêng biệt.
     - VP trong project (https://github.com/abishekaditya/DesignPatterns/blob/master/StrategyPattern/QuackSqueak.cs).
+    
      class QuackSqueak : IQuackBehaviour
      {
         public void Quack()
@@ -110,7 +114,8 @@
     **Visitor**
     - là một mẫu thiết kế hành vi cho phép thêm các hành vi mới vào hệ thống phân cấp lớp hiện có mà không thay đổi bất kỳ mã hiện có nào.
     - Visitor pattern không phải là một mẫu quá phổ biến vì tính phức tạp và khả năng áp dụng hẹp của nó.
-    - VD trong project (https://github.com/abishekaditya/DesignPatterns/blob/master/VisitorPattern/LivingRoomVisitor.cs)
+    - VD trong project (https://github.com/abishekaditya/DesignPatterns/blob/master/VisitorPattern/LivingRoomVisitor.cs).
+    
      public class LivingRoomVisitor : IUnitVisitor
     {
         public void VisitApartment(Apartment apartment)
