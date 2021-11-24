@@ -32,6 +32,8 @@
             }
         }
     }
+    .
+    
     - So sánh
     + khá giống nhau vì nó không để lộ các thuộc tính có bên trong class.
     
@@ -49,6 +51,8 @@
             Console.WriteLine($"Message to customer: {message}");
         }
     }
+    .
+    
     - so sánh : về cơ bản thì giống với cách sử dụng trong phần lý thuyết nhưng khác nhau ở chỗ trong phần này thì lớp Customer không kế thừa lớp Mediator mà sử dụng một đối tượng Mediator. 
     
     **Memento**
@@ -90,6 +94,7 @@
             Count--;
         }
     }
+    
     - So sánh : giống với cách sử dụng trong lý thuyết.
     
    **Strategy**
